@@ -1,0 +1,412 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    color: black;
+    background-color: white;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.heading {
+    text-align: center;
+    padding: 30px;
+}
+
+.heading h3 {
+    color: goldenrod;
+    margin-bottom: 10px;
+}
+
+.heading h1 {
+    font-size: 38px;
+    margin: 10px;
+}
+
+.heading p {
+    font-size: 17px;
+}
+
+
+/* =========================
+   MAIN PROJECT
+========================= */
+
+.projectSection {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 3px 3px 10px gray;
+}
+
+
+/* Image */
+
+.projectImage {
+    width: 50%;
+    height: 500px;
+}
+
+.projectImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Description */
+
+.projectDescription {
+    width: 50%;
+    padding: 35px;
+    background-color: rgb(43, 50, 43);
+    color: white;
+}
+
+.projectDescription h3 {
+    color: goldenrod;
+}
+
+.projectDescription h1 {
+    font-size: 30px;
+}
+
+.projectDescription p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   PROJECT INFORMATION
+========================= */
+
+.infoSection {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 40px auto;
+}
+
+.infoBox {
+    width: 22%;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 7px gray;
+}
+
+.infoBox h3 {
+    color: goldenrod;
+    font-size: 15px;
+}
+
+.infoBox p {
+    font-size: 16px;
+}
+
+
+/* =========================
+   SERVICES
+========================= */
+
+.services {
+    text-align: center;
+    padding: 30px;
+}
+
+.services > h3 {
+    color: goldenrod;
+}
+
+.services > h1 {
+    font-size: 32px;
+}
+
+
+/* Flexbox instead of Grid */
+
+.serviceContainer {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 30px auto;
+}
+
+.serviceBox {
+    width: 22%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px gray;
+}
+
+.icon {
+    font-size: 40px;
+}
+
+.serviceBox h2 {
+    font-size: 20px;
+}
+
+.serviceBox p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   PROJECT HIGHLIGHTS
+========================= */
+
+.highlights {
+    display: flex;
+    width: 90%;
+    margin: 50px auto;
+    background-color: rgb(43, 50, 43);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+/* Image */
+
+.highlightImage {
+    width: 50%;
+}
+
+.highlightImage img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+
+/* Text */
+
+.highlightText {
+    width: 50%;
+    padding: 30px;
+    color: white;
+}
+
+.highlightText h3 {
+    color: goldenrod;
+}
+
+.highlightText h1 {
+    font-size: 30px;
+}
+
+.highlightText li {
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+
+
+/* =========================
+   BOTTOM SECTION
+========================= */
+
+.bottomSection {
+    text-align: center;
+    padding: 50px;
+    background-color: rgb(247, 247, 238);
+    margin-top: 40px;
+}
+
+.bottomSection h3 {
+    color: goldenrod;
+}
+
+.bottomSection h1 {
+    font-size: 32px;
+}
+
+.bottomSection p {
+    font-size: 17px;
+}
+
+
+/* Buttons */
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.buttons a {
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+}
+
+
+/* Back button */
+
+.backButton {
+    background-color: gray;
+    color: black;
+    border: 1px solid black;
+}
+
+
+/* Consultation button */
+
+.consultButton {
+    background-color: rgb(72, 120, 25);
+    color: white;
+}
+
+
+/* =========================
+   HOVER
+========================= */
+
+.buttons a:hover {
+    opacity: 0.8;
+}
+
+.serviceBox:hover {
+    box-shadow: 3px 3px 12px gray;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    /* Heading */
+
+    .heading {
+        padding: 20px 15px;
+    }
+
+    .heading h1 {
+        font-size: 28px;
+    }
+
+    .heading p {
+        font-size: 15px;
+    }
+
+
+    /* Project Section */
+
+    .projectSection {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .projectImage {
+        width: 100%;
+        height: 300px;
+    }
+
+    .projectDescription {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .projectDescription h1 {
+        font-size: 25px;
+    }
+
+    .projectDescription p {
+        font-size: 15px;
+    }
+
+
+    /* Project Information */
+
+    .infoSection {
+        flex-direction: column;
+        width: 90%;
+        gap: 15px;
+    }
+
+    .infoBox {
+        width: 100%;
+    }
+
+
+    /* Services */
+
+    .services {
+        padding: 20px 10px;
+    }
+
+    .services > h1 {
+        font-size: 27px;
+    }
+
+    .serviceContainer {
+        flex-direction: column;
+        width: 90%;
+        gap: 20px;
+    }
+
+    .serviceBox {
+        width: 100%;
+    }
+
+
+    /* Project Highlights */
+
+    .highlights {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .highlightImage {
+        width: 100%;
+    }
+
+    .highlightImage img {
+        height: 300px;
+    }
+
+    .highlightText {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .highlightText h1 {
+        font-size: 25px;
+    }
+
+
+    /* Bottom Section */
+
+    .bottomSection {
+        padding: 35px 20px;
+    }
+
+    .bottomSection h1 {
+        font-size: 27px;
+    }
+
+
+    /* Buttons */
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttons a {
+        width: 80%;
+        text-align: center;
+    }
+
+}
