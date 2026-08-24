@@ -118,7 +118,7 @@
     height: 150px;
     border-radius: 5px;
     position: relative;
-    left: 30px;
+    left: 10px;
 }
 
 .section3 h3 {
@@ -159,13 +159,108 @@
 .projectRef{
     text-align: center;
 }
-.projectRef button{
+.projectBtn {
+    display: block;
     padding: 10px;
-    width: 80%;
+    width: 75%;
+    margin: auto;
     background-color: grey;
+    border: 2px solid black;
     border-radius: 5px;
+    text-decoration: none;
+    color: black;
 }
 .project p {
     text-align: center;
     font-size: 15px;
 }
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+ .section1 {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .one {
+        width: 90%;
+    }
+    .section2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .image-container {
+        width: 90%;
+        height: auto;
+        margin-left: 0;
+        flex-direction: column;
+    }
+    .image1 {
+        width: 100%;
+        height: 250px;
+    }
+    .image1 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .desc2 {
+        position: static;
+        padding: 20px;
+    }
+    .desc2 h1 {
+        font-size: 25px;
+    }
+    .desc2 h3 {
+        font-size: 16px;
+    }
+    .form_container {
+        width: 90%;
+        margin-right: 0;
+        padding: 20px;
+    }
+    .form_container input,
+    .form_container select {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .form_container button {
+        width: 100%;
+    }
+    .section3 {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .review,
+    .map,
+    .project {
+        width: 90%;
+    }
+    .ref {
+        flex-direction: column;
+    }
+    .map iframe {
+        width: 100%;
+        height: 200px;
+        position: static;
+    }
+    .projectRef img {
+        width: 100%;
+        height: 200px;
+    }
+    .projectBtn {
+        width: 100%;
+    }
+    .people {
+        gap: 10px;
+    }
+
+}
+
